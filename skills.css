@@ -1,0 +1,97 @@
+.skills-section {
+    padding: 4rem 2rem;
+    background: var(--background-color);
+}
+
+.skills-container {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    background: transparent;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skill-card:hover {
+    transform: translateY(-3px);
+}
+
+.software-icon {
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+}
+
+.software-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.skill-card h3 {
+    font-size: 0.8rem;
+    color: var(--text-color);
+    margin: 0;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.skill-card:hover h3 {
+    opacity: 1;
+}
+
+.skill-bar {
+    display: none;
+}
+
+.skill-card:nth-child(1) .skill-progress { background: #31A8FF; }
+.skill-card:nth-child(2) .skill-progress { background: #FF9A00; }
+.skill-card:nth-child(3) .skill-progress { background: #E51E25; }
+.skill-card:nth-child(4) .skill-progress { background: #666666; }
+.skill-card:nth-child(5) .skill-progress { background: #00A4EF; }
+.skill-card:nth-child(6) .skill-progress { background: #7FBA00; }
+.skill-card:nth-child(7) .skill-progress { background: #4DB6AC; }
+.skill-card:nth-child(8) .skill-progress { background: #D83B01; }
+
+/* 响应式布局 */
+@media (max-width: 1024px) {
+    .skills-grid {
+        grid-template-columns: repeat(4, 60px);
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .skills-grid {
+        grid-template-columns: repeat(4, 50px);
+        gap: 0.5rem;
+    }
+    
+    .software-icon {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .skill-card h3 {
+        font-size: 0.7rem;
+    }
+} 

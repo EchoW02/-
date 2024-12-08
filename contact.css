@@ -1,0 +1,225 @@
+.footer {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, var(--background-color) 0%, #ffffff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.footer-subtitle {
+    color: #666;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.social-link {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.social-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: var(--primary-color);
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.social-link:hover {
+    color: white;
+    transform: translateY(-5px);
+}
+
+.social-link:hover::before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.social-link .tooltip {
+    position: absolute;
+    bottom: -40px;
+    background: var(--text-color);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.social-link:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.footer-bottom {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* 二维码弹窗样式 */
+.qr-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.qr-content {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    position: relative;
+    transform: scale(0.9);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.qr-modal.active .qr-content {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.qr-content img {
+    max-width: 200px;
+    border-radius: var(--border-radius);
+}
+
+.close-modal {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.close-modal:hover {
+    background: #2980b9;
+    transform: rotate(90deg);
+}
+
+/* 装饰元素 */
+.footer-shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.footer-shape {
+    position: absolute;
+    background: var(--primary-color);
+    opacity: 0.1;
+}
+
+.shape-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 10%;
+    right: 10%;
+}
+
+.shape-dots {
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, var(--primary-color) 1px, transparent 2px);
+    background-size: 15px 15px;
+    top: 20%;
+    left: 10%;
+    opacity: 0.2;
+}
+
+@media (max-width: 768px) {
+    .social-links {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    .social-link {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+} 
+
+.xhs-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.social-link.xiaohongshu {
+    color: var(--text-color);
+}
+
+.social-link.xiaohongshu:hover {
+    color: #fe2c55;
+}
+
+/* 抖音图标特殊样式 */
+.social-link .fa-tiktok {
+    font-size: 1.3rem;
+}
+
+.social-link:hover .fa-tiktok {
+    color: white;
+    text-shadow: 2px 2px #fe2c55, -2px -2px #00f2ea;
+} 

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo Wang - 个人主页</title>
+    <!-- 引入字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- 引入图标库 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <!-- 引入模块化样式 -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/works.css">
+    <link rel="stylesheet" href="styles/skills.css">
+    <link rel="stylesheet" href="styles/chat.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/planning.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="logo">
+            <div class="logo-avatar">
+                <img src="C:/Users/Wsl/WeChatProjects/images/个人.jpg" alt="Echo Wang">
+            </div>
+            <span class="logo-text">Echo Wang</span>
+        </div>
+        <div class="nav-links">
+            <a href="#home">首页</a>
+            <a href="#about">关于我</a>
+            <a href="#contact">联系方式</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title" contenteditable="true">你好，我是<span class="highlight">Echo Wang</span></h1>
+                <p class="hero-subtitle" contenteditable="true">前端开发工程师 / UI设计师 / 摄影爱好者</p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn primary-btn">了解更多</a>
+                    <a href="#contact" class="btn secondary-btn">联系我</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="C:/Users/Wsl/WeChatProjects/images/个人.jpg" alt="Echo Wang的个人照片">
+                    <div class="image-decoration">
+                        <span class="dot dot-1"></span>
+                        <span class="dot dot-2"></span>
+                        <span class="line line-1"></span>
+                        <span class="line line-2"></span>
+                    </div>
+                </div>
+                <div class="hero-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>向下滚动</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- 作品展示 -->
+    <section id="works" class="works-section">
+        <div class="container">
+            <h2 class="section-title">摄影作品</h2>
+            <div class="works-grid">
+                <!-- 作品1 -->
+                <div class="work-item">
+                    <img src="./images/portfolio/urban/1.jpg" alt="城市印象">
+                    <div class="work-overlay">
+                        <h3>城市印象</h3>
+                        <p>城市建筑与光影</p>
+                        <a href="./works/urban.html" class="work-link">查看作品集</a>
+                    </div>
+                </div>
+                <!-- 作品2 -->
+                <div class="work-item">
+                    <img src="./images/portfolio/nature/1.jpg" alt="自然风光">
+                    <div class="work-overlay">
+                        <h3>自然风光</h3>
+                        <p>大自然的色彩与光影</p>
+                        <a href="./works/nature.html" class="work-link">查看作品集</a>
+                    </div>
+                </div>
+                <!-- 作品3 -->
+                <div class="work-item">
+                    <img src="./images/portfolio/street/1.jpg" alt="街头摄影">
+                    <div class="work-overlay">
+                        <h3>街头摄影</h3>
+                        <p>捕捉城市生活瞬间</p>
+                        <a href="./works/street.html" class="work-link">查看作品集</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 规划作品集 -->
+    <section id="planning" class="planning-section">
+        <div class="container">
+            <h2 class="section-title">规划作品集</h2>
+            <div class="planning-grid">
+                <!-- 城市设计 -->
+                <div class="planning-item">
+                    <img src="./images/portfolio/planning/urban-planning.jpg" alt="城市设计">
+                    <div class="planning-overlay">
+                        <h3>城市设计</h3>
+                        <p>城市空间的艺术营造</p>
+                        <a href="./works/urban-planning.html" class="planning-link">查看作品集</a>
+                    </div>
+                </div>
+                <!-- 乡村规划 -->
+                <div class="planning-item">
+                    <img src="./images/portfolio/planning/rural.jpg" alt="乡村规划">
+                    <div class="planning-overlay">
+                        <h3>乡村规划</h3>
+                        <p>乡村振兴与特色发展</p>
+                        <a href="./works/rural.html" class="planning-link">查看作品集</a>
+                    </div>
+                </div>
+                <!-- 控制性详细规划 -->
+                <div class="planning-item">
+                    <img src="./images/portfolio/planning/regulatory.jpg" alt="控制性详细规划">
+                    <div class="planning-overlay">
+                        <h3>控制性详细规划</h3>
+                        <p>精细化的城市管控</p>
+                        <a href="./works/regulatory.html" class="planning-link">查看作品集</a>
+                    </div>
+                </div>
+                <!-- 总体规划 -->
+                <div class="planning-item">
+                    <img src="./images/portfolio/planning/master.jpg" alt="总体规划">
+                    <div class="planning-overlay">
+                        <h3>总体规划</h3>
+                        <p>城市发展的战略蓝图</p>
+                        <a href="./works/master.html" class="planning-link">查看作品集</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能展示 -->
+    <section id="skills" class="skills-section">
+        <h2 class="section-title">专业技能</h2>
+        <div class="skills-container">
+            <div class="skills-grid">
+                <!-- Photoshop -->
+                <div class="skill-card">
+                    <i class="software-icon">
+                        <img src="./images/icons/ps.svg" alt="Photoshop">
+                    </i>
+                    <h3>Photoshop</h3>
+                </div>
+                <!-- Illustrator -->
+                <div class="skill-card">
+                    <i class="software-icon">
+                        <img src="./images/icons/ai.svg" alt="Illustrator">
+                    </i>
+                    <h3>Illustrator</h3>
+                </div>
+                <!-- AutoCAD -->
+                <div class="skill-card">
+                    <i class="software-icon">
+                        <img src="./images/icons/autocad.svg" alt="AutoCAD">
+                    </i>
+                    <h3>AutoCAD</h3>
+                </div>
+                <!-- Rhino -->
+                <div class="skill-card">
+                    <i class="software-icon">
+                        <img src="./images/icons/rhino.svg" alt="Rhino">
+                    </i>
+                    <h3>Rhino</h3>
+                </div>
+                <!-- D5 -->
+                <div class="skill-card">
+                    <i class="software-icon">
+                        <img src="./images/icons/d5.svg" alt="D5 Render">
+                    </i>
+                    <h3>D5 Render</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI对话界面 -->
+    <section id="chat" class="chat-section">
+        <div class="container">
+            <h2 class="section-title">AI助手</h2>
+            <p class="section-desc">有什么想问我的吗？AI助手会为您解答</p>
+            <div class="chat-container">
+                <div class="chat-sidebar">
+                    <button class="new-chat-btn">新建对话</button>
+                    <div class="chat-history">
+                        <div class="history-item active">
+                            <span class="history-title">新对话</span>
+                            <button class="delete-chat"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-main">
+                    <div class="chat-messages">
+                        <div class="message ai-message">
+                            <div class="message-content">
+                                你好！我是AI助手，有什么我可以帮助你的吗？
+                            </div>
+                            <div class="message-time">刚刚</div>
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <textarea placeholder="输入您的问题..."></textarea>
+                        <button class="send-btn"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 社交媒体链接 -->
+    <footer id="contact" class="footer">
+        <div class="footer-content">
+            <h2 class="footer-title">联系我</h2>
+            <p class="footer-subtitle">通过以下方式与我取得联系</p>
+            <div class="social-links">
+                <a href="#" class="social-link wechat">
+                    <i class="fab fa-weixin"></i>
+                    <span class="tooltip">微信</span>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-tiktok"></i>
+                    <span class="tooltip">抖音</span>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-weibo"></i>
+                    <span class="tooltip">微博</span>
+                </a>
+                <a href="#" class="social-link xiaohongshu">
+                    <svg class="xhs-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12.9677 8.30435L14.8066 6.45652L16.6456 8.30435L14.8066 10.1522L12.9677 8.30435ZM11.5288 9.73913L13.3677 11.587L11.5288 13.4348L9.68984 11.587L11.5288 9.73913ZM8.25097 13.0435L10.0899 14.8913L8.25097 16.7391L6.41209 14.8913L8.25097 13.0435ZM16.6456 13.0435L18.4845 14.8913L16.6456 16.7391L14.8066 14.8913L16.6456 13.0435ZM12.9677 17.1304L14.8066 18.9783L16.6456 17.1304L14.8066 15.2826L12.9677 17.1304Z"/>
+                    </svg>
+                    <span class="tooltip">小红书</span>
+                </a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Echo Wang. All rights reserved.</p>
+            </div>
+        </div>
+        <div class="footer-shapes">
+            <div class="footer-shape shape-circle"></div>
+            <div class="footer-shape shape-dots"></div>
+        </div>
+    </footer>
+
+    <!-- 微信二维码弹窗 -->
+    <div class="qr-modal">
+        <div class="qr-content">
+            <img src="./images/wechat-qr.jpg" alt="Echo Wang的微信二维码">
+            <button class="close-modal">&times;</button>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html> 
